@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "realtime",
+  "version": "${version}",
+  "name": "Real Time of Day",
+  "description": "synchronize in-game time with real time",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.tianeo.realtime.realtime.client.RealtimeClient"
+    ],
+    "main": [
+      "com.tianeo.realtime.realtime.Realtime"
+    ]
+  },
+  "mixins": [
+    "realtime.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": ">=1.16 <=1.19.4"
+  }
+}
