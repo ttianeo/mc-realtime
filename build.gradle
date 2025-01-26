@@ -19,6 +19,16 @@ repositories {
     // for more information about repositories.
 }
 
+loom {
+    splitEnvironmentSourceSets()
+    mods {
+        "modid" {
+            sourceSet sourceSets.main
+            sourceSet sourceSets.client
+        }
+    }
+}
+
 dependencies {
     // To change the versions see the gradle.properties file
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
@@ -41,7 +51,7 @@ processResources {
     }
 }
 
-def targetJavaVersion = 8
+def targetJavaVersion = 16
 tasks.withType(JavaCompile).configureEach {
     // ensure that the encoding is set to UTF-8, no matter what the system default is
     // this fixes some edge cases with special characters not displaying correctly
