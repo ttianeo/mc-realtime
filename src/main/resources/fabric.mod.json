@@ -4,8 +4,13 @@
   "version": "${version}",
   "name": "Real Time of Day",
   "description": "synchronize in-game time with real time",
-  "authors": [],
-  "contact": {},
+  "authors": [
+    "Tianeo"
+  ],
+  "contact": {
+    "homepage": "https://github.com/ttianeo/mc-realtime",
+    "issues": "https://github.com/ttianeo/mc-realtime/issues"
+  },
   "license": "MIT",
   "icon": "assets/icon.png",
   "environment": "*",
