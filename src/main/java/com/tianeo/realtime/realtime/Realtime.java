@@ -47,7 +47,6 @@ public class Realtime implements ModInitializer {
                 // transfer to ticks
                 long ticks = (Math.round(secondsFromSixAM * 24000 / 86400.0) + 24000) % 24000;
                 overworld.method_29199(ticks); // setTimeOfDay
-                LOGGER.info("Set time of day: {}", overworld.getTimeOfDay());
             } else {
                 LOGGER.error("Failed to get overworld pointer");
             }
