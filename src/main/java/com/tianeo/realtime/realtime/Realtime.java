@@ -48,8 +48,6 @@ public class Realtime implements ModInitializer {
                     long ticks = (Math.round(secondsFromSixAM * 24000 / 86400.0) + 24000) % 24000;
 
                     world.setTimeOfDay(ticks); // setTimeOfDay
-                    LOGGER.info("Target time of day: {}", ticks);
-                    LOGGER.info("Set time of day: {}", world.getTimeOfDay());
                 } else {
                     throw new Error("Failed to get overworld pointer");
                 }
