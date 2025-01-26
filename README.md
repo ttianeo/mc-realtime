@@ -18,7 +18,7 @@ The corresponding relationship is as follows:
 
 ## Download and Install
 
-1. The latest stable release of Sodium can be downloaded from our
+1. The latest stable release can be downloaded from our
    official [Modrinth](https://modrinth.com/mod/real-time-of-day) and [Curseforge](https://legacy.curseforge.com/minecraft/mc-mods/real-time-of-day) pages.
 2. Download JAR files that match your MC version
 3. Put it in the mod folder
